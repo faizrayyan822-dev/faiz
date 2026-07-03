@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Awak ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:linear-gradient(to bottom,#ffd6e7,#fff0f6);
+}
+
+/* Balloon */
+.balloon{
+    position:absolute;
+    bottom:-200px;
+    width:80px;
+    height:100px;
+    border-radius:50%;
+    animation:floatUp linear infinite;
+}
+
+.balloon:before{
+    content:'';
+    position:absolute;
+    width:4px;
+    height:100px;
+    background:rgba(255,255,255,0.6);
+    top:100px;
+    left:50%;
+}
+
+.balloon:after{
+    content:'';
+    position:absolute;
+    width:20px;
+    height:20px;
+    background:inherit;
+    left:30px;
+    bottom:-8px;
+    transform:rotate(45deg);
+}
+
+/* Belon pelbagai warna pink */
+.b1{left:5%; background:#ff69b4; animation-duration:12s;}
+.b2{left:20%; background:#ff85c1; animation-duration:15s;}
+.b3{left:35%; background:#ff4fa3; animation-duration:11s;}
+.b4{left:50%; background:#ff99cc; animation-duration:14s;}
+.b5{left:65%; background:#ff5fa2; animation-duration:13s;}
+.b6{left:80%; background:#ff80bf; animation-duration:16s;}
+.b7{left:92%; background:#ff66b2; animation-duration:10s;}
+
+/* Gerakan naik + goyang */
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(-5deg);
+    }
+    25%{
+        transform:translateY(-25vh) translateX(20px) rotate(5deg);
+    }
+    50%{
+        transform:translateY(-50vh) translateX(-20px) rotate(-5deg);
+    }
+    75%{
+        transform:translateY(-75vh) translateX(15px) rotate(5deg);
+    }
+    100%{
+        transform:translateY(-120vh) translateX(-15px) rotate(-5deg);
+    }
+}
+h1 {
+  color:#ff1493;
+}
+p {
+  color:#ff1493;
+}
+
+</style>
+</head>
+
+
+<body class="center">
+
+
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+<div class="balloon b5"></div>
+<div class="balloon b6"></div>
+<div class="balloon b7"></div>
+
+
+
+<div class="box fade">
+
+  <h1 >Dear... My Future Wife </h1>
+
+  <p>
+    This Is From Your Future Husband....
+  </p>
+
+
+
+  <a href="bday.html">
+
+    <button>Click Here Princess... 💌</button>
+  </a>
+
+</div>
+
+<script>
+
+const song = document.getElementById("song");
+
+// AUTO PLAY
+window.addEventListener("load", () => {
+
+  song.play();
+
+});
+
+</script>
+
+</body>
+</html>
